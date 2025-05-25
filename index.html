@@ -18,6 +18,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              dd100: "#1DD100",
             },
           },
         },
@@ -27,8 +28,25 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header class="mt-12">
+      <!-- Nav bar area -->
+      <nav>
+        <div class="flex items-center justify-evenly">
+          <h2 class="font-raleway text-4xl font-extrabold">P-Ticket</h2>
+          <div>
+            <ul class="flex gap-14 text-lg font-medium font-raleway">
+              <li>Home</li>
+              <li>About</li>
+              <li>Destination</li>
+              <li>Search</li>
+            </ul>
+          </div>
+          <button class="btn border-[#1DD10066] bg-[#1DD1001A] text-dd100 font-raleway font-bold text-xl hover:bg-[#1DD1001A]">
+            Bus
+            <img src="images/bus-icon.png" alt="" />
+          </button>
+        </div>
+      </nav>
       <!-- banner section -->
       <section></section>
     </header>
