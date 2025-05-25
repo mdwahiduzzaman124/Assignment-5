@@ -28,23 +28,40 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="mt-12">
+    <header class="">
       <!-- Nav bar area -->
       <nav>
-        <div class="flex items-center justify-evenly">
-          <h2 class="font-raleway text-4xl font-extrabold">P-Ticket</h2>
+        <div class="navbar bg-base-100 flex justify-evenly">
           <div>
-            <ul class="flex gap-14 text-lg font-medium font-raleway">
-              <li>Home</li>
-              <li>About</li>
-              <li>Destination</li>
-              <li>Search</li>
+            <div class="dropdown">
+              <h2 class="text-4xl font-extrabold font-raleway">P-Ticket</h2>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 text-lg font-medium font-raleway"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
             </ul>
           </div>
-          <button class="btn border-[#1DD10066] bg-[#1DD1001A] text-dd100 font-raleway font-bold text-xl hover:bg-[#1DD1001A]">
-            Bus
-            <img src="images/bus-icon.png" alt="" />
-          </button>
+          <div class="">
+            <a class="btn text-dd100 font-raleway font-bold text-xl bg-[#1DD1001A] border-[#1DD10066]"
+              >Bus
+              <img src="images/bus-icon.png" alt="" />
+            </a>
+          </div>
         </div>
       </nav>
       <!-- banner section -->
